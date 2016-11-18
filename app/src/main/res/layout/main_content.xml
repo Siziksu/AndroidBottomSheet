@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp">
+
+            <ImageButton
+                android:id="@+id/btnExpandBottomSheet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/expand"
+                android:textColor="@drawable/button_text"
+                android:text="Expand Bottom Sheet" />
+
+            <ImageButton
+                android:id="@+id/btnCollapseBottomSheet"
+                android:layout_toEndOf="@+id/btnExpandBottomSheet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/collapse"
+                android:textColor="@drawable/button_text"
+                android:text="Collapse Bottom Sheet" />
+
+            <ImageButton
+                android:id="@+id/btnHideBottomSheet"
+                android:layout_toEndOf="@+id/btnCollapseBottomSheet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/hide"
+                android:textColor="@drawable/button_text"
+                android:text="Hide Bottom Sheet" />
+
+            <ImageButton
+                android:id="@+id/btnModalBottomSheet"
+                android:layout_toEndOf="@+id/btnHideBottomSheet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/show"
+                android:textColor="@drawable/button_text"
+                android:text="Modal Bottom Sheet" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/lorem1"
+            android:layout_below="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem_ipsum" />
+
+        <TextView
+            android:id="@+id/lorem2"
+            android:layout_below="@+id/lorem1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem_ipsum" />
+
+        <TextView
+            android:id="@+id/lorem3"
+            android:layout_below="@+id/lorem2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem_ipsum" />
+
+        <TextView
+            android:id="@+id/lorem4"
+            android:layout_below="@+id/lorem3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lorem_ipsum" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="hint">#ff838383</color>
+    <color name="buttonPressed">@color/colorPrimary</color>
+    <color name="buttonDisabled">@color/hint</color>
+    <color name="buttonFocused">@color/colorPrimary</color>
+    <color name="buttonDefault">@color/colorPrimaryDark</color>
+</resources>
